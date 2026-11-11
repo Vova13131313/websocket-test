@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebSocket чат</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="status">Статус: очікування</div>
+
+        <div class="controls">
+            <button id="get-btn">Оновити список</button>
+            <button id="close-btn">Закрити з'єднання</button>
+            <button id="reconnect-btn">Підключитися знову</button>
+        </div>
+
+        <div class="message-form">
+            <input type="text" id="username-input" placeholder="Username..." autocomplete="off">
+            <input type="text" id="message-text" placeholder="Message...">
+            <button id="send-btn">Надіслати</button>
+        </div>
+
+        <ul id="chat-box"></ul>
+
+        <script src="app.js"></script>
+    </body>
+</html>
